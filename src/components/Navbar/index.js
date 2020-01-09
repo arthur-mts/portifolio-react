@@ -39,8 +39,8 @@ export default function Navbar() {
         <NavLink className="navLink" to="/projetos">
           Projetos
               </NavLink>
-        <NavLink className="navLink" to="/">
-          Stack e Linguagens conhecidas
+        <NavLink className="navLink" to="/about">
+          Sobre mim
               </NavLink>
       </nav>
       <hr />

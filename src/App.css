@@ -20,5 +20,6 @@ body{
 .content{
   display: flex;
   margin-left: 10px;
+  padding-top: 10px;
 }
 
