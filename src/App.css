@@ -14,8 +14,11 @@ body{
 }
 
 .App{
-    display: flex;
-    
+    display: inline;
 }
 
+.content{
+  display: flex;
+  margin: 10px 10px;
+}
 

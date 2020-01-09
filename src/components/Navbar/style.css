@@ -1,17 +1,19 @@
 .containerNav{
     margin-left: 30px;
+    margin-right: 30px;
 }
-.asideNav{
+.containerNav hr{
     border-top: 1px #2a2c2e;
 }
-.nav{
+.containerNav nav{
     margin-top: 20px;
     display: flex;
-    text-align: center;
+    /* text-align: center; */
     height: 30px;
 }
 
-.containerNav a{
+
+.containerNav a {
     color: inherit;
     text-decoration: none;
     padding: 5px 25px 5px 25px;
