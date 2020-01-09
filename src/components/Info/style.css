@@ -14,12 +14,12 @@
     
 }
 
-ul{
+.profile ul{
     padding-top: 20px;
     padding-bottom: 10px;
 }
 
-li{
+.profile li{
     font-size: 15px;
     padding-bottom: 5px;
     list-style-type: none;
@@ -34,7 +34,7 @@ li{
 .profile a:hover{
     text-decoration: underline;
 }
-p{
+.profile p{
     padding-bottom: 5px;
 }
 .desc{

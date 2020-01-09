@@ -4,6 +4,8 @@
 
 .listCursos{
     margin: 0 10px 0 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     
 }
 
@@ -13,9 +15,15 @@
     margin-top: 20px;
 }
 
-.listCursos > li{
+
+
+
+.listCursos li{
     padding-bottom: 40px;
     display: flex;
+    font-size: 15px;
+    padding-bottom: 5px;
+    list-style-type: none;
     
 }
 
@@ -23,3 +31,4 @@
     text-align: justify;
     padding-left: 10px;
 }
+

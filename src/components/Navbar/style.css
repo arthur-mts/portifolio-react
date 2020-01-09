@@ -1,16 +1,20 @@
 .containerNav{
-    margin-left: 30px;
-    margin-right: 30px;
+    width: 100%;
+}
+
+.scrolled{
+    background-color: #fff;
+    position: fixed;
 }
 .containerNav hr{
     border-top: 1px #2a2c2e;
 }
 .containerNav nav{
-    margin-top: 20px;
     display: flex;
     /* text-align: center; */
     height: 30px;
 }
+
 
 
 .containerNav a {
