@@ -9,13 +9,12 @@
 
 
 .aboutMe{
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-top: 5px;
+    padding-left: 15px;
 }
 
 .aboutMe > h2{
-    margin: 10px 0px 10px 0px;
-
+    margin: 10px 0px 15px 0px;
 }
 
 .aboutMe > ul{
@@ -40,6 +39,6 @@
 .progress{
     border-radius: 10px;
     height: 100%;
-    animation: load 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s 1 normal none;
+    animation: load 3.6s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s 1 normal none;
 }
 
