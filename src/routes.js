@@ -7,6 +7,6 @@ export default () => (
     <Switch>
       <Route exact path="/" component={Academic} />
       <Route path="/projetos" component={Projects} />
-      <Route path="/techs" component={About} />
+      <Route path="/about" component={About} />
     </Switch>
 )

@@ -7,6 +7,7 @@ import './style.css';
 
 export default function Navbar() {
   const [scroll, setscroll] = useState(false);
+
   useEffect(() => {
     window.addEventListener('scroll', () => {
       

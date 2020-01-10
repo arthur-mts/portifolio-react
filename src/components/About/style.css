@@ -1,0 +1,28 @@
+.aboutMe{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.aboutMe > h2{
+    margin: 10px 0px 10px 0px;
+
+}
+
+.aboutMe > ul{
+    padding-left: 20px;
+    list-style: square;
+}
+.aboutMe > ul> li{
+    display: flex;
+    padding-bottom: 18px;
+}
+
+
+.bar{
+    height: 20px;
+    width: 60%;
+    float: left;
+    background-color: #fafafa;
+    border-radius: 50px;
+    margin-right: 10px;
+}
