@@ -1,13 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { ThemeProvider } from "styled-components";
 import reportWebVitals from "./reportWebVitals";
 import GlobalStyle from "./styles/globalStyle";
 import Frontpage from "./pages/Frontpage";
+import theme from "./styles/theme";
 
 ReactDOM.render(
   <React.StrictMode>
-    <GlobalStyle />
-    <Frontpage />
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Frontpage />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
