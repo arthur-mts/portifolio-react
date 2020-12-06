@@ -2,8 +2,6 @@ import { createGlobalStyle } from "styled-components";
 import bgPng from "../assets/bg.png";
 
 export default createGlobalStyle`
-
-
   body {
     margin: 0;
     
@@ -19,6 +17,11 @@ export default createGlobalStyle`
 
   * {
     box-sizing: border-box;
+  }
+
+
+  a {
+    text-decoration: none;
   }
   }
 `;
