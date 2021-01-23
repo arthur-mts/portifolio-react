@@ -22,6 +22,7 @@ import {
   LaravelIcon,
 } from "./styles";
 import AboutMeSection from "./components/AboutMe/AboutMeSection";
+import MyFocusSection from "./components/MyFocus/MyFocusSection";
 
 const Frontpage: React.FC = () => {
   function getSubtitleHtml() {
@@ -82,24 +83,7 @@ const Frontpage: React.FC = () => {
 
         <Skills>
           <h2>My focus is</h2>
-          <ul>
-            <li>
-              <LaravelIcon />
-              <p>Laravel</p>
-            </li>
-            <li>
-              <JSIcon />
-              <p>Javascript</p>
-            </li>
-            <li>
-              <NodeIcons />
-              <p>NodeJS</p>
-            </li>
-            <li>
-              <ReactIcon />
-              <p>React</p>
-            </li>
-          </ul>
+          <MyFocusSection />
         </Skills>
       </TechsContainer>
     </Wrapper>
