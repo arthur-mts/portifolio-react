@@ -8,8 +8,6 @@ import {
   GrMail,
 } from "react-icons/gr";
 
-import linus from "../../assets/linus.png";
-
 import {
   Wrapper,
   Links as SocialLinks,
@@ -18,11 +16,10 @@ import {
   InfoContainer,
   TechsContainer,
   Skills,
-  TSIcon,
   JSIcon,
   ReactIcon,
   NodeIcons,
-  JavaIcon,
+  LaravelIcon,
 } from "./styles";
 import AboutMeSection from "./components/AboutMe/AboutMeSection";
 
@@ -87,24 +84,20 @@ const Frontpage: React.FC = () => {
           <h2>My focus is</h2>
           <ul>
             <li>
-              <TSIcon />
-              <p>Typescript</p>
+              <LaravelIcon />
+              <p>Laravel</p>
             </li>
             <li>
               <JSIcon />
               <p>Javascript</p>
             </li>
             <li>
-              <ReactIcon />
-              <p>React</p>
-            </li>
-            <li>
               <NodeIcons />
               <p>NodeJS</p>
             </li>
             <li>
-              <JavaIcon />
-              <p>Java</p>
+              <ReactIcon />
+              <p>React</p>
             </li>
           </ul>
         </Skills>

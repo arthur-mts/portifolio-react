@@ -1,5 +1,6 @@
 import { DiJava } from "react-icons/di";
-import { FaNodeJs, FaReact } from "react-icons/fa";
+import { DiLaravel } from "react-icons/di";
+import { FaNodeJs, FaReact, FaLaravel } from "react-icons/fa";
 import { SiJavascript, SiTypescript } from "react-icons/si";
 import styled, { css } from "styled-components";
 
@@ -203,6 +204,11 @@ export const NodeIcons = styled(FaNodeJs)`
 `;
 
 export const JavaIcon = styled(DiJava)`
+  color: #6e0101;
+  ${iconCSS("#6e0101")}
+`;
+
+export const LaravelIcon = styled(FaLaravel)`
   color: #6e0101;
   ${iconCSS("#6e0101")}
 `;
