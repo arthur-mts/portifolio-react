@@ -8,7 +8,6 @@ import {
   GrMail,
 } from "react-icons/gr";
 
-import { AiOutlineMail } from "react-icons/ai";
 import linus from "../../assets/linus.png";
 
 import {
@@ -25,79 +24,63 @@ import {
   NodeIcons,
   JavaIcon,
 } from "./styles";
+import AboutMeSection from "./components/AboutMe/AboutMeSection";
 
 const Frontpage: React.FC = () => {
+  function getSubtitleHtml() {
+    return {
+      __html: process.env.REACT_APP_PREV_SUBTITLE || "",
+    };
+  }
   return (
     <Wrapper>
       <InfoContainer>
         <header>
-          <h1>Arthur Mauricio Soares</h1>
-          <h2>
-            Computer Enginner, Computer Technician and <br /> Full Stack
-            Developer
-          </h2>
+          <h1>{process.env.REACT_APP_FULL_NAME}</h1>
+          <h2 dangerouslySetInnerHTML={getSubtitleHtml()} />
           <SocialLinks>
-            <SocialLink>
-              <a href="https://twitter.com/tucacipo">
-                <GrTwitter />
-              </a>
-            </SocialLink>
-            <SocialLink>
-              <a href="https://github.com/arthur-mts">
-                <GrGithub />
-              </a>
-            </SocialLink>
-            <SocialLink>
-              <a href="https://www.linkedin.com/in/arthur-mts/">
-                <GrLinkedinOption />
-              </a>
-            </SocialLink>
-            <SocialLink>
-              <a href="https://open.spotify.com/user/arthur.mts?si=E4cnWeT5S4aLdj6Y6tmWeA">
-                <GrSpotify />
-              </a>
-            </SocialLink>
-            <SocialLink>
-              <a href="mailto:arthur.mts@gmail.com">
-                <GrMail />
-              </a>
-            </SocialLink>
+            {!!process.env.REACT_APP_SOCIAL_TWEETER_LINK && (
+              <SocialLink>
+                <a href={process.env.REACT_APP_SOCIAL_TWEETER_LINK}>
+                  <GrTwitter />
+                </a>
+              </SocialLink>
+            )}
+            {!!process.env.REACT_APP_SOCIAL_GITHUB_LINK && (
+              <SocialLink>
+                <a href={process.env.REACT_APP_SOCIAL_GITHUB_LINK}>
+                  <GrGithub />
+                </a>
+              </SocialLink>
+            )}
+            {!!process.env.REACT_APP_SOCIAL_LINKEDIN_LINK && (
+              <SocialLink>
+                <a href={process.env.REACT_APP_SOCIAL_LINKEDIN_LINK}>
+                  <GrLinkedinOption />
+                </a>
+              </SocialLink>
+            )}
+            {!!process.env.REACT_APP_SOCIAL_SPOTIFY_LINK && (
+              <SocialLink>
+                <a href={process.env.REACT_APP_SOCIAL_SPOTIFY_LINK}>
+                  <GrSpotify />
+                </a>
+              </SocialLink>
+            )}
+            {!!process.env.REACT_APP_SOCIAL_EMAIL_ADDRESS && (
+              <SocialLink>
+                <a href={`mailto:${process.env.REACT_APP_SOCIAL_EMAIL_ADDRESS}`}>
+                  <GrMail />
+                </a>
+              </SocialLink>
+            )}
           </SocialLinks>
         </header>
       </InfoContainer>
       <TechsContainer>
         <AboutMe>
           <h2>About me</h2>
-          <p>
-            Hello! My name is Arthur Mauricio Thomaz Soares and i am a software
-            developer, computer technician, mediocre guitarist and lover of good
-            music and black coffee.
-          </p>
-
-          <p>
-            I live in the interior of Paraíba and I like that. Here I have fresh
-            air, good friends, an amazing family, and the energy to do
-            absolutely everything.
-          </p>
-
-          <p>
-            But, <strong> talk is cheap show me the code </strong>
-            <img src={linus} alt="Linus" />
-            <br />I write some codes and love technology since 2016 at IFPB
-            Esperança where i started{" "}
-            <a href="#https://estudante.ifpb.edu.br/cursos/74/">
-              Computer Technican Course
-            </a>
-            . There i learned Web Development Operational Systems and a bunch of
-            other stuff about tech.
-            <br />
-            At 2019 after finish the technican course i entered{" "}
-            <a href="#https://estudante.ifpb.edu.br/cursos/74/">
-              Computer Engenieering Course
-            </a>{" "}
-            at IFPB Campina Grande and in 2020 i started working with web
-            development and back-end development.
-          </p>
+          <AboutMeSection />
         </AboutMe>
 
         <Skills>
