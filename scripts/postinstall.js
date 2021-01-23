@@ -5,15 +5,15 @@ FileSystem.copyFileSync(
   './src/stubs/AboutMeSection.tsx.stub',
   './src/pages/Frontpage/components/AboutMe/AboutMeSection.tsx'
 );
-console.info('Successfully generated.');
+console.info('Successfully generated.\n');
 
 console.info('Generating Stubs files for "My Focus".')
 FileSystem.copyFileSync(
-  './src/stubs/AboutMeSection.tsx.stub',
+  './src/stubs/MyFocusSection.tsx.stub',
   './src/pages/Frontpage/components/MyFocus/MyFocusSection.tsx'
 );
-console.info('Successfully generated.');
+console.info('Successfully generated.\n');
 
 console.info('Copying .env file from .env.example file.');
 FileSystem.copyFileSync('.env.example', '.env');
-console.info('.env successfully copied.')
+console.info('.env successfully copied.\n')
