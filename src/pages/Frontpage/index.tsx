@@ -16,13 +16,10 @@ import {
   InfoContainer,
   TechsContainer,
   Skills,
-  JSIcon,
-  ReactIcon,
-  NodeIcons,
-  LaravelIcon,
 } from "./styles";
 import AboutMeSection from "./components/AboutMe/AboutMeSection";
 import MyFocusSection from "./components/MyFocus/MyFocusSection";
+import Profile from "../../assets/profile.jpeg";
 
 const Frontpage: React.FC = () => {
   function getSubtitleHtml() {
@@ -34,6 +31,7 @@ const Frontpage: React.FC = () => {
     <Wrapper>
       <InfoContainer>
         <header>
+          <img src={Profile} alt="Profile" />
           <h1>{process.env.REACT_APP_FULL_NAME}</h1>
           <h2 dangerouslySetInnerHTML={getSubtitleHtml()} />
           <SocialLinks>
@@ -67,7 +65,9 @@ const Frontpage: React.FC = () => {
             )}
             {!!process.env.REACT_APP_SOCIAL_EMAIL_ADDRESS && (
               <SocialLink>
-                <a href={`mailto:${process.env.REACT_APP_SOCIAL_EMAIL_ADDRESS}`}>
+                <a
+                  href={`mailto:${process.env.REACT_APP_SOCIAL_EMAIL_ADDRESS}`}
+                >
                   <GrMail />
                 </a>
               </SocialLink>

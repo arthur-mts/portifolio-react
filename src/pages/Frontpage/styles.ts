@@ -44,6 +44,9 @@ export const Wrapper = styled.main`
       font-size: 1.5rem;
       text-align: center;
     }
+    img {
+      border-radius: 100%;
+    }
   }
 `;
 
