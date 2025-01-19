@@ -22,56 +22,39 @@ import MyFocusSection from "./components/MyFocus/MyFocusSection";
 import Profile from "../../assets/profile.png";
 
 const Frontpage: React.FC = () => {
-  function getSubtitleHtml() {
-    return {
-      __html: process.env.REACT_APP_PREV_SUBTITLE || "",
-    };
-  }
   return (
     <Wrapper>
       <InfoContainer>
         <header>
           <img src={Profile} alt="Profile" />
-          <h1>{process.env.REACT_APP_FULL_NAME}</h1>
-          <h2 dangerouslySetInnerHTML={getSubtitleHtml()} />
+          <h1>Arthur Soares</h1>
+          <h2>Software Enginner</h2>
           <SocialLinks>
-            {!!process.env.REACT_APP_SOCIAL_TWEETER_LINK && (
-              <SocialLink>
-                <a href={process.env.REACT_APP_SOCIAL_TWEETER_LINK}>
-                  <GrTwitter />
-                </a>
-              </SocialLink>
-            )}
-            {!!process.env.REACT_APP_SOCIAL_GITHUB_LINK && (
-              <SocialLink>
-                <a href={process.env.REACT_APP_SOCIAL_GITHUB_LINK}>
-                  <GrGithub />
-                </a>
-              </SocialLink>
-            )}
-            {!!process.env.REACT_APP_SOCIAL_LINKEDIN_LINK && (
-              <SocialLink>
-                <a href={process.env.REACT_APP_SOCIAL_LINKEDIN_LINK}>
-                  <GrLinkedinOption />
-                </a>
-              </SocialLink>
-            )}
-            {!!process.env.REACT_APP_SOCIAL_SPOTIFY_LINK && (
-              <SocialLink>
-                <a href={process.env.REACT_APP_SOCIAL_SPOTIFY_LINK}>
-                  <GrSpotify />
-                </a>
-              </SocialLink>
-            )}
-            {!!process.env.REACT_APP_SOCIAL_EMAIL_ADDRESS && (
-              <SocialLink>
-                <a
-                  href={`mailto:${process.env.REACT_APP_SOCIAL_EMAIL_ADDRESS}`}
-                >
-                  <GrMail />
-                </a>
-              </SocialLink>
-            )}
+            <SocialLink>
+              <a href="https://twitter.com/tucacipo">
+                <GrTwitter />
+              </a>
+            </SocialLink>
+            <SocialLink>
+              <a href="https://github.com/arthur-mts">
+                <GrGithub />
+              </a>
+            </SocialLink>
+            <SocialLink>
+              <a href="https://www.linkedin.com/in/arthur-mts/">
+                <GrLinkedinOption />
+              </a>
+            </SocialLink>
+            <SocialLink>
+              <a href="https://open.spotify.com/user/arthur.mts?si=E4cnWeT5S4aLdj6Y6tmWeA">
+                <GrSpotify />
+              </a>
+            </SocialLink>
+            <SocialLink>
+              <a href={"mailto:arthur.mts@gmail.com"}>
+                <GrMail />
+              </a>
+            </SocialLink>
           </SocialLinks>
         </header>
       </InfoContainer>

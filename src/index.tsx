@@ -8,7 +8,7 @@ import theme from "./styles/theme";
 
 ReactDOM.render(
   <React.StrictMode>
-    <title>{process.env.REACT_APP_PAGE_TITLE}</title>
+    <title>Arthur Soares</title>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Frontpage />

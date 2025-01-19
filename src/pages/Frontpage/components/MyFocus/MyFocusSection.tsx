@@ -1,29 +1,33 @@
 import React from "react";
-import {JavaIcon, JSIcon, NodeIcons, ReactIcon, TSIcon} from "../../styles";
+import { JavaIcon, NodeIcons, PostgresIcon, KubernetesIcon, PythonIcon, DatabricksIcon } from "../../styles";
 
 const MyFocusSection: React.FC = () => {
   return (
     <>
       <ul>
         <li>
-          <TSIcon/>
-          <p>Typescript</p>
+          <JavaIcon />
+          <p>Java</p>
         </li>
         <li>
-          <JSIcon/>
-          <p>Javascript</p>
+          <KubernetesIcon />
+          <p>Kubernetes</p>
         </li>
         <li>
-          <ReactIcon/>
-          <p>React</p>
+          <PostgresIcon />
+          <p>Postgres</p>
         </li>
         <li>
-          <NodeIcons/>
+          <NodeIcons />
           <p>NodeJS</p>
         </li>
         <li>
-          <JavaIcon/>
-          <p>Java</p>
+          <PythonIcon />
+          <p>Python</p>
+        </li>
+        <li>
+          <DatabricksIcon/>
+          <p>Databricks</p>
         </li>
       </ul>
     </>

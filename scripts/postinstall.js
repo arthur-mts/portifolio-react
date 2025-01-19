@@ -13,7 +13,3 @@ FileSystem.copyFileSync(
   './src/pages/Frontpage/components/MyFocus/MyFocusSection.tsx'
 );
 console.info('Successfully generated.\n');
-
-console.info('Copying .env file from .env.example file.');
-FileSystem.copyFileSync('.env.example', '.env');
-console.info('.env successfully copied.\n')

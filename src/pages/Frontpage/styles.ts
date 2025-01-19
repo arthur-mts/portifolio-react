@@ -1,7 +1,7 @@
-import { DiJava } from "react-icons/di";
+import { DiJava, DiPostgresql, DiPython } from "react-icons/di";
 import { DiLaravel } from "react-icons/di";
 import { FaNodeJs, FaReact, FaLaravel } from "react-icons/fa";
-import { SiJavascript, SiTypescript } from "react-icons/si";
+import { SiDatabricks, SiJavascript, SiKubernetes, SiTypescript } from "react-icons/si";
 import styled, { css } from "styled-components";
 
 const flex = css`
@@ -46,6 +46,7 @@ export const Wrapper = styled.main`
     }
     img {
       border-radius: 100%;
+      max-width: 100%;
     }
   }
 `;
@@ -136,7 +137,7 @@ export const TechsContainer = styled.section`
       p {
         max-width: 100%;
       }
-      margin-bottom: 2rem;
+      margin-bottom: 5rem;
     }
   }
 `;
@@ -156,13 +157,11 @@ export const Skills = styled.div`
     list-style: none;
     display: flex;
     justify-content: center;
-    flex-direction: row;
     flex-wrap: wrap;
 
     li {
       ${flex}
       padding: 1rem;
-      width: 150px;
       p {
         margin: 0;
         margin-top: 16px;
@@ -186,20 +185,6 @@ const iconCSS = (color: string) => css`
   }
 `;
 
-export const TSIcon = styled(SiTypescript)`
-  color: #007acc;
-  ${iconCSS("#007acc")}
-`;
-
-export const JSIcon = styled(SiJavascript)`
-  color: #f0db4f;
-  ${iconCSS("#f0db4f")}
-`;
-
-export const ReactIcon = styled(FaReact)`
-  color: #61dbfb;
-  ${iconCSS("#61dbfb")}
-`;
 
 export const NodeIcons = styled(FaNodeJs)`
   color: #3c873a;
@@ -211,7 +196,22 @@ export const JavaIcon = styled(DiJava)`
   ${iconCSS("#6e0101")}
 `;
 
-export const LaravelIcon = styled(FaLaravel)`
-  color: #6e0101;
-  ${iconCSS("#6e0101")}
+export const PostgresIcon = styled(DiPostgresql)`
+  color: #31638C;
+  ${iconCSS("#31638C")}
+`;
+
+export const KubernetesIcon = styled(SiKubernetes)`
+  color: #3069DE;
+  ${iconCSS("#3069DE")}
+`;
+
+export const PythonIcon = styled(DiPython)`
+  color: #F6D248;
+  ${iconCSS("#F6D248")}
+`;
+
+export const DatabricksIcon = styled(SiDatabricks)`
+  color: #E63A2B;
+  ${iconCSS("#E63A2B")}
 `;
