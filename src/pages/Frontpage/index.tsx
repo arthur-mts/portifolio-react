@@ -19,7 +19,7 @@ import {
 } from "./styles";
 import AboutMeSection from "./components/AboutMe/AboutMeSection";
 import MyFocusSection from "./components/MyFocus/MyFocusSection";
-import Profile from "../../assets/profile.jpeg";
+import Profile from "../../assets/profile.png";
 
 const Frontpage: React.FC = () => {
   function getSubtitleHtml() {
