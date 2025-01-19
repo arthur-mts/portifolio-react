@@ -143,7 +143,6 @@ export const TechsContainer = styled.section`
 `;
 
 export const Skills = styled.div`
-  margin-left: 1rem;
   h2 {
     margin-top: 0;
     color: ${({ theme }) => theme.colors.primary};
