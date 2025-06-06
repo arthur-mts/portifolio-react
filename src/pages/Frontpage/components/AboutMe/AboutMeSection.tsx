@@ -19,17 +19,16 @@ const AboutMeSection: React.FC = () => {
       <p>
         But, <strong> talk is cheap show me the code </strong>
         <img src={linus} alt="Linus" />
-        <br />I write code and study computer science since 2016 at IFPB
-        Esperança where i enrolled in the{" "}
+        <br />I have been studying computer science and writing code since 2016, when I enrolled in the{" "}
         <a href="https://estudante.ifpb.edu.br/cursos/74/">
-          Computer Technican Course
+          IFPB Computer Technican Course
         </a>
-        . There i learned the basis of computer science, web development, operational systems and other things.
+        . There I have learned the basis of computer science, web development, operational systems and other things.
         <br />
-        At 2019 after finish the technican course i enrolled at{" "}
+        At 2019 after I have finished the technican course, I started my{" "}
         <a href="https://estudante.ifpb.edu.br/cursos/28/">
           Computer Engenieering Degree
-        </a>{" "}, where i learned more deeply about programming, hardware and worked with real projects that can be found in my GitHub profile.</p>
+        </a>{" "}, where I learned more deeply about programming, hardware and worked with real projects that can be found in my GitHub profile.</p>
         <p>
         I started to work with programming effectively in 2020 as a full-stack intern. In 2021 i started working for {" "}
         <a href="https://institucional.ifood.com.br/">
