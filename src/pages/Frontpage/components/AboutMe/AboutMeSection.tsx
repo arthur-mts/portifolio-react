@@ -11,7 +11,7 @@ const AboutMeSection: React.FC = () => {
       </p>
 
       <p>
-        I live in the interior of Paraíba state in Brasil. Here I have fresh
+        I live in the countryside of the Paraíba state in Brasil. Here I have fresh
         air, good friends, an amazing family, and the energy to do
         absolutely everything.
       </p>
